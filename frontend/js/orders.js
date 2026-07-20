@@ -9,7 +9,7 @@ async function loadOrders() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/orders", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/orders", {
 
             headers: {
                 "Authorization": "Bearer " + token
@@ -154,7 +154,7 @@ async function deleteOrder(id) {
     }
 
     const response = await fetch(
-        `http://localhost:8080/orders/${id}`,
+        `https://ai-analytics-dashboard-production.up.railway.app/orders/${id}`,
         {
             method: "DELETE",
             headers: {
@@ -184,7 +184,7 @@ async function editOrder(id) {
 
     try {
 
-        const response = await fetch("http://localhost:8080/orders", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/orders", {
 
             headers: {
                 "Authorization": "Bearer " + token
@@ -226,7 +226,7 @@ async function viewOrder(id) {
 
     try {
 
-        const response = await fetch("http://localhost:8080/orders", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/orders", {
 
             headers: {
                 "Authorization": "Bearer " + token

@@ -20,7 +20,7 @@ signupForm.addEventListener("submit", async (e) => {
 
     try {
 
-        const response = await fetch("http://localhost:8080/users", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/users", {
 
             method: "POST",
 

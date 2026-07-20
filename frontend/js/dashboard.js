@@ -9,7 +9,7 @@ async function loadDashboard() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/dashboard", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/dashboard", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token
@@ -58,7 +58,7 @@ async function loadChart() {
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:8080/orders/chart", {
+    const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/orders/chart", {
         headers: {
             "Authorization": "Bearer " + token
         }
@@ -106,7 +106,7 @@ async function loadTeamPerformance() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-        "http://localhost:8080/dashboard/team-performance",
+        "https://ai-analytics-dashboard-production.up.railway.app/dashboard/team-performance",
         {
             headers: {
                 "Authorization": "Bearer " + token
@@ -150,7 +150,7 @@ async function loadAIInsights() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/dashboard/ai-insights",
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/ai-insights",
             {
                 headers: {
                     "Authorization": "Bearer " + token
@@ -194,7 +194,7 @@ async function loadRecentActivities() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/dashboard/recent-activity",
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/recent-activity",
             {
                 headers: {
                     "Authorization": "Bearer " + token
@@ -243,7 +243,7 @@ async function loadNotifications() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-        "http://localhost:8080/dashboard/notifications",
+        "https://ai-analytics-dashboard-production.up.railway.app/dashboard/notifications",
         {
             headers: {
                 "Authorization": "Bearer " + token
@@ -289,7 +289,7 @@ async function loadTasks() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/dashboard/tasks",
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/tasks",
             {
                 headers: {
                     "Authorization": "Bearer " + token
@@ -338,7 +338,7 @@ async function loadNavbarNotifications() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-        "http://localhost:8080/dashboard/notifications",
+        "https://ai-analytics-dashboard-production.up.railway.app/dashboard/notifications",
         {
             headers: {
                 Authorization: "Bearer " + token
@@ -407,7 +407,7 @@ async function loadNavbarMessages() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/dashboard/messages",
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/messages",
             {
                 headers: {
                     "Authorization": "Bearer " + token
@@ -484,7 +484,7 @@ if (navbarSearch) {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:8080/dashboard/search?keyword=" + keyword,
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/search?keyword=" + keyword,
             {
                 headers: {
                     Authorization: "Bearer " + token

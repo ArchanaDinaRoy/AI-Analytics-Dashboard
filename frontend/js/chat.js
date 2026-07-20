@@ -59,7 +59,7 @@ sendBtn.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:8080/ai/chat", {
+        const response = await fetch("https://ai-analytics-dashboard-production.up.railway.app/ai/chat", {
 
             method: "POST",
 

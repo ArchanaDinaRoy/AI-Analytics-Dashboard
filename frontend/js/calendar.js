@@ -141,7 +141,7 @@ async function loadSchedule(){
 
         const response = await fetch(
 
-            "http://localhost:8080/dashboard/schedule",
+            "https://ai-analytics-dashboard-production.up.railway.app/dashboard/schedule",
 
             {
 

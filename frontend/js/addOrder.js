@@ -42,8 +42,8 @@ async function saveOrder() {
     const token = localStorage.getItem("token");
 
     const url = editingOrderId
-        ? `http://localhost:8080/orders/${editingOrderId}`
-        : "http://localhost:8080/orders";
+        ? `https://ai-analytics-dashboard-production.up.railway.app/orders/${editingOrderId}`
+        : "https://ai-analytics-dashboard-production.up.railway.app/orders";
 
     const method = editingOrderId ? "PUT" : "POST";
 
