@@ -1,0 +1,16 @@
+.dashboard{
+    display:flex;
+}
+.content{
+
+    margin-left:260px;
+
+    width:100%;
+
+    padding:35px;
+    background: var(--bg);
+    
+}
+.content h1{
+    color:white;
+}

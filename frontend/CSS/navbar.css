@@ -1,0 +1,218 @@
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 35px;
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--shadow);
+}
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+}
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--card);
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    width:350px;
+}
+.search-box i{
+
+    color:var(--text-light);
+}
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    width:100%;
+
+    color:white;
+
+    font-size:15px;
+}
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+.icon-btn{
+
+    position:relative;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--card);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s; 
+}
+.icon-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-3px);
+}
+.badge{
+
+    position:absolute;
+
+    top:-4px;
+
+    right:-4px;
+
+    background:red;
+
+    color:white;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:10px;
+}
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:var(--card);
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+    color:antiquewhite
+}
+.profile img{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+}
+.profile:hover{
+
+    background:var(--primary);
+}
+.dashboard-body{
+
+    padding:20px;
+
+    color:white;
+}
+.profile{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.profile-menu{
+
+    position:absolute;
+
+    top:60px;
+
+    right:0;
+
+    width:180px;
+
+    background:#1f2937;
+
+    border-radius:10px;
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    z-index:999;
+
+}
+
+.profile-menu a{
+
+    color:white;
+
+    padding:14px;
+
+    text-decoration:none;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+.profile-menu a:hover{
+
+    background:#374151;
+
+}
+
+.profile:hover .profile-menu{
+
+    display:flex;
+
+}

@@ -1,0 +1,172 @@
+:root{
+
+    /* Colors */
+
+    --primary:#7B61FF;
+    --secondary:#3ABEFF;
+
+    --bg: #0f172a;
+    --surface:#1E293B;
+
+    --card:#243145;
+
+    --text:#FFFFFF;
+
+    --text-light:#94A3B8;
+
+    --success:#22C55E;
+
+    --warning:#FACC15;
+
+    --danger:#EF4444;
+
+    /* Font */
+
+    --font:'Poppins',sans-serif;
+
+    /* Border Radius */
+
+    --radius:18px;
+
+    /* Shadow */
+
+    --shadow:0 10px 25px rgba(0,0,0,.3);
+
+    /* Transition */
+
+    --transition:.3s ease;
+}
+:root{
+
+    --primary:#7B61FF;
+    --secondary:#3ABEFF;
+
+    --background:#0f172a;
+    --surface:#1E293B;
+    --card:#243145;
+
+    --text:#FFFFFF;
+    --text-light:#94A3B8;
+
+    --success:#22C55E;
+    --warning:#FACC15;
+    --danger:#EF4444;
+
+    --shadow:0 10px 25px rgba(0,0,0,.3);
+
+    /* ===== Aliases ===== */
+    --bg-color:var(--background);
+    --card-bg:var(--card);
+    --text-color:var(--text);
+    --text-secondary:var(--text-light);
+    --border-color:rgba(255,255,255,.08);
+}
+/* ================= SETTINGS VARIABLES ================= */
+
+/* ================= SETTINGS VARIABLES ================= */
+
+:root{
+
+    --settings-bg: var(--card-bg);
+
+    --settings-input-bg: var(--surface);
+
+    --settings-border: var(--border-color);
+
+    --settings-text: var(--text-color);
+
+    --settings-label: var(--text-secondary);
+
+    --settings-btn-bg: var(--primary);
+
+    --settings-btn-hover: #6a4df4;
+
+    --settings-shadow: var(--shadow);
+
+}
+/* ==========================================
+      SETTINGS VARIABLES FOR DARK MODE
+========================================== */
+
+body{
+
+    --settings-bg: var(--card-bg);
+
+    --settings-input-bg: var(--surface);
+
+    --settings-border: var(--border-color);
+
+    --settings-text: var(--text-color);
+
+    --settings-label: var(--text-secondary);
+
+    --settings-btn-bg: var(--primary);
+
+    --settings-btn-hover:#6a4df4;
+
+    --settings-shadow:var(--shadow);
+
+}
+
+/* Light Theme */
+
+body.light{
+
+    --background:#f8fafc;
+    --surface:#ffffff;
+    --card:#f1f5f9;
+
+    --text:#111827;
+    --text-light:#6b7280;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+
+    /* ===== Aliases ===== */
+    --bg-color:var(--background);
+    --card-bg:var(--card);
+    --text-color:var(--text);
+    --text-secondary:var(--text-light);
+    --border-color:#e5e7eb;
+}
+/* ==========================================
+            CALENDAR VARIABLES
+========================================== */
+
+:root{
+
+    --calendar-bg:var(--card-bg);
+
+    --calendar-surface:var(--surface);
+
+    --calendar-text:var(--text-color);
+
+    --calendar-light:var(--text-secondary);
+
+    --calendar-border:var(--border-color);
+
+    --calendar-primary:var(--primary);
+
+    --calendar-shadow:var(--shadow);
+
+}
+/* ==========================================
+        CALENDAR LIGHT THEME
+========================================== */
+
+body.light{
+
+    --calendar-bg:var(--card-bg);
+
+    --calendar-surface:var(--surface);
+
+    --calendar-text:var(--text-color);
+
+    --calendar-light:var(--text-secondary);
+
+    --calendar-border:var(--border-color);
+
+    --calendar-primary:var(--primary);
+
+    --calendar-shadow:var(--shadow);
+
+}

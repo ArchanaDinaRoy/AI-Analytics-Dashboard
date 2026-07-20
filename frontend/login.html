@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | AI Dashboard</title>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <h1>Welcome Back 👋</h1>
+
+            <p>Login to continue to your AI Dashboard</p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                    <small id="emailError" class="error"></small>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input type="password" id="password" placeholder="Enter your password">
+
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+
+                        <small id="passwordError" class="error"></small>
+
+                    </div>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="submit" class="login-btn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <p class="signup-link">
+
+                Don't have an account?
+
+                <a href="signup.html">
+
+                    Sign Up
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
