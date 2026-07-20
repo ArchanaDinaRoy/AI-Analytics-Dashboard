@@ -32,6 +32,9 @@ public class JwtFilter extends OncePerRequestFilter {
         System.out.println("JWT FILTER EXECUTED");
 
         String authHeader = request.getHeader("Authorization");
+        System.out.println("Request URI: " + request.getRequestURI());
+        System.out.println("Method: " + request.getMethod());
+        System.out.println("Authorization Header: " + authHeader);
 
         String token = null;
         String email = null;
@@ -65,5 +68,7 @@ public class JwtFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
+        System.out.println("Authentication = " +
+                SecurityContextHolder.getContext().getAuthentication());
     }
 }

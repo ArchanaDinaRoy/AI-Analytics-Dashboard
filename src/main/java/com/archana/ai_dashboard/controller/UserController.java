@@ -23,6 +23,13 @@ public class UserController  {
     public UserDTO registerUser(@RequestBody UserDTO userDTO) {
         return userService.registerUser(userDTO);
     }
+    @PostMapping("/login")
+    public AuthResponse loginUser(@RequestBody LoginRequest loginRequest) {
+
+        System.out.println("USER CONTROLLER LOGIN CALLED");
+
+        return userService.loginUser(loginRequest);
+    }
 
     @PostMapping("/login")
     public AuthResponse loginUser(@RequestBody LoginRequest loginRequest) {
