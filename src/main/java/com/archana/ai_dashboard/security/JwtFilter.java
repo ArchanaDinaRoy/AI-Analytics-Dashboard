@@ -25,24 +25,30 @@ public class JwtFilter extends OncePerRequestFilter {
     private CustomUserDetailsService userDetailsService;
 
     @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+
+        String path = request.getServletPath();
+
+        return path.equals("/users")
+                || path.equals("/users/login");
+    }
+
+    @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain)
             throws ServletException, IOException {
-        System.out.println("JWT FILTER EXECUTED");
 
         String authHeader = request.getHeader("Authorization");
-        System.out.println("Request URI: " + request.getRequestURI());
-        System.out.println("Method: " + request.getMethod());
-        System.out.println("Authorization Header: " + authHeader);
 
-        String token = null;
-        String email = null;
-
-        if (authHeader != null && authHeader.startsWith("Bearer ")) {
-            token = authHeader.substring(7);
-            email = jwtService.extractEmail(token);
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            filterChain.doFilter(request, response);
+            return;
         }
+
+        String token = authHeader.substring(7);
+
+        String email = jwtService.extractEmail(token);
 
         if (email != null &&
                 SecurityContextHolder.getContext().getAuthentication() == null) {
@@ -68,7 +74,5 @@ public class JwtFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
-        System.out.println("Authentication = " +
-                SecurityContextHolder.getContext().getAuthentication());
     }
 }

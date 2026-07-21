@@ -24,6 +24,9 @@ public class UserService {
     @Autowired
     private JwtService jwtService;
 
+    @Autowired
+    private javax.sql.DataSource dataSource;
+
     // Register User
     public UserDTO registerUser(UserDTO dto) {
 
@@ -82,6 +85,8 @@ public class UserService {
 
         System.out.println("=================================");
         System.out.println("Email Received = " + loginRequest.getEmail());
+        System.out.println(userRepository.findAll());
+        System.out.println(userRepository.count());
 
         User user = userRepository.findByEmail(loginRequest.getEmail());
 

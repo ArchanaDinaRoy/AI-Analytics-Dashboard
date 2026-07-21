@@ -9,8 +9,6 @@ import com.archana.ai_dashboard.dto.LoginRequest;
 import com.archana.ai_dashboard.dto.AuthResponse;
 
 import java.util.List;
-import java.util.Optional;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/users")
@@ -31,10 +29,6 @@ public class UserController  {
         return userService.loginUser(loginRequest);
     }
 
-    @PostMapping("/login")
-    public AuthResponse loginUser(@RequestBody LoginRequest loginRequest) {
-        return userService.loginUser(loginRequest);
-    }
 
     @GetMapping
     public List<UserDTO> getAllUsers() {
